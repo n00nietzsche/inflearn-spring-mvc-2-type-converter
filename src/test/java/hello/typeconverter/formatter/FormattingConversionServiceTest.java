@@ -30,5 +30,8 @@ public class FormattingConversionServiceTest {
 
         Integer stringToNumber = conversionService.convert("1,000", Integer.class);
         assertThat(stringToNumber).isEqualTo(1000);
+
+        Integer stringToNumber2 = conversionService.convert("1000", Integer.class);
+        assertThat(stringToNumber2).isEqualTo(1000);
     }
 }
